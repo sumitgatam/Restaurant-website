@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savory Bites - Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">Savory <span>Bites</span></a>
+            
+            <!-- Open/Close Toggle Button -->
+            <div class="status-toggle">
+                <span class="status-label">Restaurant Status:</span>
+                <button class="toggle-btn" id="status-toggle">
+                    <span class="toggle-indicator"></span>
+                    <span class="toggle-text">We're Open!</span>
+                </button>
+            </div>
+            
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to <span>Savory Bites</span></h1>
+            <p class="tagline">Experience Culinary Excellence</p>
+            <p class="hero-description">Fresh ingredients, authentic recipes, and unforgettable flavors await you.</p>
+            <a href="#menu" class="cta-btn">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our <span>Menu</span></h2>
+            <p class="section-subtitle">Discover our delicious offerings</p>
+            
+            <!-- Menu Categories -->
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="all">All</button>
+                <button class="menu-tab" data-category="appetizers">Appetizers</button>
+                <button class="menu-tab" data-category="mains">Main Course</button>
+                <button class="menu-tab" data-category="desserts">Desserts</button>
+                <button class="menu-tab" data-category="drinks">Drinks</button>
+            </div>
+            
+            <div class="menu-grid" id="menu-grid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Our <span>Story</span></h2>
+                    <p>Welcome to Savory Bites, where passion meets plate. Founded in 2010, our restaurant has been serving authentic, delicious cuisine made with the freshest ingredients.</p>
+                    <p>Our chefs combine traditional recipes with modern techniques to create dishes that tantalize your taste buds and leave you craving for more.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🍽️</span>
+                            <span>Fresh Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">👨‍🍳</span>
+                            <span>Expert Chefs</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⭐</span>
+                            <span>Quality Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Restaurant interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <span class="section-label">Gallery</span>
+            <h2 class="section-title">Our <span>Gallery</span></h2>
+            <p class="section-subtitle">A glimpse of our culinary creations</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><span>Appetizers</span></div>
+                <div class="gallery-item"><span>Main Course</span></div>
+                <div class="gallery-item"><span>Desserts</span></div>
+                <div class="gallery-item"><span>Drinks</span></div>
+                <div class="gallery-item"><span>Ambiance</span></div>
+                <div class="gallery-item"><span>Plating</span></div>
+                <div class="gallery-item"><span>Fresh</span></div>
+                <div class="gallery-item"><span>Delicious</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <span class="section-label">Get In Touch</span>
+            <h2 class="section-title">Contact <span>Us</span></h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Gourmet Street, Food City, FC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@savorybites.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🕐</span>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Sun: 11:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="reservation">Table Reservation</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Your message..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-message" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Savory <span>Bites</span></a>
+                    <p>Experience the best dining in town. We look forward to serving you!</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">FB</a>
+                        <a href="#">IG</a>
+                        <a href="#">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
